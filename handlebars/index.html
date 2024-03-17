@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>handlebars</title>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <!-- <script defer src="script.js"></script> -->
+</head>
+<body>
+    <h1>handlebars</h1>
+
+    <script type="text/x-handlebars-template" id="template">
+        {{! this is comment}}
+        <h1>{{title}}</h1>
+        <ol>
+            {{#each list}}
+            <li>{{this.name}}</li>
+            {{/each}}
+        </ol>
+        <p>{{footer}}</p>
+       
+    </script>
+
+    <div id="output">test</div>
+    <button id="button">Fill</button>
+
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+<!-- <ul>
+    <li>
+        <span>Name</span>
+    </li>
+</ul>
+
+<ul>
+    <li></li>
+</ul>
+<script>
+    var arr = [
+        {
+            name: 'Luki developer'
+        },
+        ['1','2','3']
+    ]
+</script> -->

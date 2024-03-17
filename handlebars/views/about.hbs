@@ -1,0 +1,101 @@
+
+
+<h1>About</h1>
+<a href="/">Home</a>
+
+<p>name:{{name}}</p>
+<p>Now you have got {{age}} y</p>
+<p>And you have car {{car}}</p>
+
+<h2>Warunek if</h2>
+{{#if isPet}}
+<p>You have {{pet.type}} and his name is {{pet.name}}</p>
+
+{{else}}
+
+<h2>Time to adopt pet!!!!</h2>
+{{/if}}
+
+<h2>zaprzeczenie unless</h2>
+{{#unless isPet}}
+    <p>Zaprzeczenie do ifa unless  === !if</p>
+{{/unless}}
+
+<h2>Petle #each</h2>
+<p>Options</p>
+<p>this</p>
+<p>{ {.} }</p>
+<p>people as |value key|</p>
+
+<p>--------------------------</p>
+{{#each people as |value key|}}
+    {{!-- {{this}} <br/> --}}
+    {{!-- <p>{{.}}</p> --}}
+    <p>{{key}}:{{value}}</p>
+{{/each}}
+
+<h2>Users - array of objects</h2>
+{{#each users }}
+    {{!-- {{this}} <br/> --}}
+    {{!-- <p>{{.}}</p> --}}
+    <p>{{this.name}} and is {{this.age}}</p>
+{{/each}}
+
+<p>------------</p>
+<p>one object</p>
+{{#each user as | value key|}}
+    {{!-- {{this}} <br/> --}}
+    {{!-- <p>{{.}}</p> --}}
+    <p>{{key}}:{{value}}</p>
+
+{{/each}}
+
+
+<h2>Nested array</h2>
+
+{{#each lists}}
+    {{!-- {{log this}} --}}
+    <h3>List</h3>
+    {{#each this.items as |v k|}}
+        <p>{{k}} {{v}}</p>
+    {{/each}}
+    {{!-- <h1></h1> --}}
+{{/each}}
+
+
+
+<h2>lookup</h2>
+
+{{lookup user 'name'}}
+
+<p>base</p>
+{{user.name}}
+
+<p>pierwszy element tablicy {{people}}</p>
+{{lookup people 0}}
+
+
+<h2>Custom helper</h2>
+
+<p>calculation</p>
+
+{{calculation 10}}
+
+{{#list name}}
+    {{test}}
+    <br>
+    {{test2}}
+{{/list}}
+
+{{!-- This is comment --}}
+{{tripleBrackets}}
+{{{tripleBrackets}}}
+
+<h2>With</h2>
+
+{{#with user}}
+    <p>user name is {{name}}</p>
+{{/with}}
+
+{{user.car.speed.max}}
+

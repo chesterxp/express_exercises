@@ -1,0 +1,7 @@
+ctrl + K + 0 colapse VSC
+win + , - pokaż pulpit
+win + D - zminimalizu all
+win + E - odpal Folder
+win + S - Wyszukiwarka windows
+esc + shift + ctrl - Menager zadań
+win + P, wybór ekranu

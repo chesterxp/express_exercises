@@ -1,0 +1,314 @@
+{{#with nav}}
+<h1>{{extraLogo.details.name}}</h1>
+<div class="navigation__overlay">
+        <div class="navigation__box">
+            <!-- LOGO GŁÓWNE-->
+            <div class="navigation__logo">
+                <h1>
+                    <a href="{{logo.url}}" title="{{logo.name}}">
+                        <div class="navigation__HPLogo">
+                            <svg width="215" height="50">
+                                <use xlink:href="#logo_gazeta_pl"></use>
+                            </svg>
+                        </div>
+                    </a>
+                </h1>
+            </div>
+
+            <!-- LOGO OPCJONALNE -->
+            <!-- LINKI GŁÓWNE -->
+            <div class="navigation__mainNav">
+                <!-- link do cykli inny niz reszta -->
+                <div class="navigation__links navigation__links--cycles" title="Cykle Gazeta.pl">
+                        Cykle Gazeta.pl
+                    </div>
+                <!-- pozostałe linki -->
+                {{#each links.desktop}}
+                    {{!-- {{log this}} --}}
+                    <h3>{{this.name}}</h3>
+                    {{#each this.items as |v k|}}
+                        <p>{{k}} {{v}}</p>
+                    {{/each}}
+                    {{!-- <h1></h1> --}}
+                {{/each}}
+                {{!-- <a href="https://wiadomosci.gazeta.pl/wiadomosci/0,0.html#s=NavLinks" id="LinkArea:NavLinks1" title="Wiadomości" class="navigation__links navigation__links1">
+                                Wiadomości</a>
+                        <a href="https://www.sport.pl/sport-hp/0,0.html#s=NavLinks" id="LinkArea:NavLinks2" title="Sport" class="navigation__links navigation__links2">
+                                Sport</a>
+                        <a href="https://next.gazeta.pl/next/0,0.html#s=NavLinks" id="LinkArea:NavLinks3" title="Next" class="navigation__links navigation__links3">
+                                Next</a>
+                        <a href="https://wyborcza.pl/0,0.html#s=NavLinks" id="LinkArea:NavLinks4" title="Wyborcza.pl" class="navigation__links navigation__links4">
+                                Wyborcza.pl</a>
+                        <a href="https://kobieta.gazeta.pl/kobieta/0,0.html#s=NavLinks" id="LinkArea:NavLinks5" title="Kobieta" class="navigation__links navigation__links5">
+                                Kobieta</a>
+                        <!-- DZIUBEK -->
+                <div id="LinkArea:NavMoreSeo" class="navigation__links--dropDownButton js-trigger-main-menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="5" viewBox="0 0 9.167 4.583">
+                        <g transform="translate(-14.417 -9.167)">
+                            <path style="fill: #000321" d="M7,10l4.583,4.583L16.167,10Z" transform="translate(7.417 -0.833)"></path>
+                        </g>
+                    </svg>
+                </div> --}}
+            </div>
+
+            <!-- IKONKI -->
+            <div class="navigation__mainIcons">
+                    <a href="https://oauth.gazeta.pl/poczta/auth#s=NavIco" id="LinkArea:NavIco" title="Poczta" class="navigation__mainIconsLink ">
+                            <div class="navigation__mainIconsImg">
+                                <img src="https://static.im-g.pl/im/2/30574/m30574022,NAVIGATION-POCZTA.png" alt="Ikonka zakładki Poczta">
+                            </div>
+                            <span class="navigation__mainIconName">Poczta</span>
+                        </a>
+                    <a href="https://forum.gazeta.pl/forum/0,0.html#s=NavIco" id="LinkArea:NavIco" title="Forum" class="navigation__mainIconsLink ">
+                            <div class="navigation__mainIconsImg">
+                                <img src=" https://static.im-g.pl/im/6/30574/m30574026,NAVIGATION-FORUM.png" alt="Ikonka zakładki Forum">
+                            </div>
+                            <span class="navigation__mainIconName">Forum</span>
+                        </a>
+                    <a href="https://zakupy.avanti24.pl/#s=NavIco" id="LinkArea:NavIco" title="Okazje" class="navigation__mainIconsLink ">
+                            <div class="navigation__mainIconsImg">
+                                <img src="https://static.im-g.pl/im/0/30574/m30574030,NAVIGATION-OKAZJE.png" alt="Ikonka zakładki Okazje">
+                            </div>
+                            <span class="navigation__mainIconName">Okazje</span>
+                        </a>
+                    <a href="http://szukaj.gazeta.pl/wyszukaj/artykul#s=NavIco" id="LinkArea:NavIco" title="Szukaj" class="navigation__mainIconsLink ">
+                            <div class="navigation__mainIconsImg">
+                                <img src="https://static.im-g.pl/im/4/30574/m30574024,NAVIGATION-SZUKAJ.png" alt="Ikonka zakładki Szukaj">
+                            </div>
+                            <span class="navigation__mainIconName">Szukaj</span>
+                        </a>
+                    <a href="http://zielona.gazeta.pl/zielona_gazeta/0,0.html#s=NavIco" id="LinkArea:NavIco" title="Środowisko" class="navigation__mainIconsLink greenIcon">
+                            <div class="navigation__mainIconsImg">
+                                <img src="https://static.im-g.pl/im/8/30574/m30574028,NAVIGATION-LEAF.png" alt="Ikonka zakładki Środowisko">
+                            </div>
+                            <span class="navigation__mainIconName">Środowisko</span>
+                        </a>
+                    </div>
+            </div>
+
+        <div class="navigation__cyclesBoxListOverlay">
+                <!-- navigation cycles HP 0.0.1-->
+<!-- CYKLE -->
+<div class="navigation__cyclesBoxList">
+        <div class="navigation__cyclesList">
+                <!-- GRUPA LINKÓW NEWS I SPORT -->
+                <div class="navigation__cyclesTitle">NEWS I SPORT </div>
+
+                <a href="https://wiadomosci.gazeta.pl/wiadomosci/0,114916.html?tag=Poranna+rozmowa+Gazeta.pl#s=NavLinksCykl" id="LinkArea:NavLinksCykl" class="navigation__cyclesElement" title="Poranna rozmowa">
+                        <div class="navigation__cyclesPhoto">
+                            <img data-src="https://bi.im-g.pl/im/77/f8/1c/z30377335II.jpg" src="https://bi.im-g.pl/im/77/f8/1c/z30377335II.jpg" alt="Zdjęcie cyklu: Poranna rozmowa">
+                        </div>
+                        <div class="navigation__cyclesDetails">
+                            <div class="navigation__cyclesName">Poranna rozmowa</div>
+                            <div class="navigation__cyclesDate">poniedziałek-piątek, 8:30</div>
+                        </div>
+                    </a>
+                <a href="https://wiadomosci.gazeta.pl/wywiady-sroczynskiego#s=NavLinksCykl" id="LinkArea:NavLinksCykl" class="navigation__cyclesElement" title="Wywiady Sroczyńskiego">
+                        <div class="navigation__cyclesPhoto">
+                            <img data-src="https://bi.im-g.pl/im/eb/bc/1c/z30133227II.jpg" src="https://bi.im-g.pl/im/eb/bc/1c/z30133227II.jpg" alt="Zdjęcie cyklu: Wywiady Sroczyńskiego">
+                        </div>
+                        <div class="navigation__cyclesDetails">
+                            <div class="navigation__cyclesName">Wywiady Sroczyńskiego</div>
+                            <div class="navigation__cyclesDate">poniedziałek, 12</div>
+                        </div>
+                    </a>
+                <a href="https://open.spotify.com/show/2bdjSb8oW7YKO1R2TBnQXx#s=NavLinksCykl" id="LinkArea:NavLinksCykl" class="navigation__cyclesElement" title="Sport.pl Live">
+                        <div class="navigation__cyclesPhoto">
+                            <img data-src="https://bi.im-g.pl/im/8b/c5/1a/z28070539II.jpg" src="https://bi.im-g.pl/im/8b/c5/1a/z28070539II.jpg" alt="Zdjęcie cyklu: Sport.pl Live">
+                        </div>
+                        <div class="navigation__cyclesDetails">
+                            <div class="navigation__cyclesName">Sport.pl Live</div>
+                            <div class="navigation__cyclesDate">poniedziałek, 20</div>
+                        </div>
+                    </a>
+                <a href="https://next.gazeta.pl/next/0,114763.html?tag=studio+biznes#s=NavLinksCykl" id="LinkArea:NavLinksCykl" class="navigation__cyclesElement" title="Studio Biznes">
+                        <div class="navigation__cyclesPhoto">
+                            <img data-src="https://bi.im-g.pl/im/76/f8/1c/z30377334II.jpg" src="https://bi.im-g.pl/im/76/f8/1c/z30377334II.jpg" alt="Zdjęcie cyklu: Studio Biznes">
+                        </div>
+                        <div class="navigation__cyclesDetails">
+                            <div class="navigation__cyclesName">Studio Biznes</div>
+                            <div class="navigation__cyclesDate">środa, 11</div>
+                        </div>
+                    </a>
+                <a href="https://weekend.gazeta.pl/weekend/0,189996,30128739.html#s=NavLinksCykl" id="LinkArea:NavLinksCykl" class="navigation__cyclesElement" title="Kwestionariusze Wysockiego">
+                        <div class="navigation__cyclesPhoto">
+                            <img data-src="https://bi.im-g.pl/im/ef/bc/1c/z30133231II.jpg" src="https://bi.im-g.pl/im/ef/bc/1c/z30133231II.jpg" alt="Zdjęcie cyklu: Kwestionariusze Wysockiego">
+                        </div>
+                        <div class="navigation__cyclesDetails">
+                            <div class="navigation__cyclesName">Kwestionariusze Wysockiego</div>
+                            <div class="navigation__cyclesDate"></div>
+                        </div>
+                    </a>
+                <a href="https://www.sport.pl/sport/0,105641.html?tag=Kiedrosport#s=NavLinksCykl" id="LinkArea:NavLinksCykl" class="navigation__cyclesElement" title="Kiedrosport">
+                        <div class="navigation__cyclesPhoto">
+                            <img data-src="https://bi.im-g.pl/im/f8/d6/17/z24995064II.jpg" src="https://bi.im-g.pl/im/f8/d6/17/z24995064II.jpg" alt="Zdjęcie cyklu: Kiedrosport">
+                        </div>
+                        <div class="navigation__cyclesDetails">
+                            <div class="navigation__cyclesName">Kiedrosport</div>
+                            <div class="navigation__cyclesDate"></div>
+                        </div>
+                    </a>
+                <a href="https://wiadomosci.gazeta.pl/o_nas/7,174552,29318652,deklaracja-redakcyjna-2023-nasza-partia-jest-partia-czytelnikow.html#s=NavLinksCykl" id="LinkArea:NavLinksCykl" class="navigation__cyclesElement" title="Deklaracja redakcyjna 2023">
+                        <div class="navigation__cyclesPhoto">
+                            <img data-src="https://bi.im-g.pl/im/1e/f5/1b/z29318686II.jpg" src="https://bi.im-g.pl/im/1e/f5/1b/z29318686II.jpg" alt="Zdjęcie cyklu: Deklaracja redakcyjna 2023">
+                        </div>
+                        <div class="navigation__cyclesDetails">
+                            <div class="navigation__cyclesName">Deklaracja redakcyjna 2023</div>
+                            <div class="navigation__cyclesDate"></div>
+                        </div>
+                    </a>
+                </div>
+        <div class="navigation__cyclesList">
+                <!-- GRUPA LINKÓW NEWS I SPORT -->
+                <div class="navigation__cyclesTitle">ŚRODOWISKO</div>
+
+                <a href="https://wiadomosci.gazeta.pl/wiadomosci/0,114916.html?tag=pi%B1tki+dla+klimatu#s=NavLinksCykl" id="LinkArea:NavLinksCykl" class="navigation__cyclesElement" title="Piątki dla klimatu">
+                        <div class="navigation__cyclesPhoto">
+                            <img data-src="https://bi.im-g.pl/im/a5/3c/18/z25413285II.jpg" src="https://bi.im-g.pl/im/a5/3c/18/z25413285II.jpg" alt="Zdjęcie cyklu: Piątki dla klimatu">
+                        </div>
+                        <div class="navigation__cyclesDetails">
+                            <div class="navigation__cyclesName">Piątki dla klimatu</div>
+                            <div class="navigation__cyclesDate">piątek, 10</div>
+                        </div>
+                    </a>
+                <a href="https://next.gazeta.pl/ekosledztwa#s=NavLinksCykl" id="LinkArea:NavLinksCykl" class="navigation__cyclesElement" title="Ekośledztwa">
+                        <div class="navigation__cyclesPhoto">
+                            <img data-src="https://bi.im-g.pl/im/82/d3/1a/z28129922II.jpg" src="https://bi.im-g.pl/im/82/d3/1a/z28129922II.jpg" alt="Zdjęcie cyklu: Ekośledztwa">
+                        </div>
+                        <div class="navigation__cyclesDetails">
+                            <div class="navigation__cyclesName">Ekośledztwa</div>
+                            <div class="navigation__cyclesDate"></div>
+                        </div>
+                    </a>
+                <a href="https://weekend.gazeta.pl/weekend/0,177330.html#s=NavLinksCykl" id="LinkArea:NavLinksCykl" class="navigation__cyclesElement" title="Zagrajmy w zielone">
+                        <div class="navigation__cyclesPhoto">
+                            <img data-src="https://bi.im-g.pl/im/72/d7/19/z27098226II.jpg" src="https://bi.im-g.pl/im/72/d7/19/z27098226II.jpg" alt="Zdjęcie cyklu: Zagrajmy w zielone">
+                        </div>
+                        <div class="navigation__cyclesDetails">
+                            <div class="navigation__cyclesName">Zagrajmy w zielone</div>
+                            <div class="navigation__cyclesDate"></div>
+                        </div>
+                    </a>
+                <a href="https://moto.pl/MotoPL/0,90115.html?tag=moto+2030#s=NavLinksCykl" id="LinkArea:NavLinksCykl" class="navigation__cyclesElement" title="Moto 2030">
+                        <div class="navigation__cyclesPhoto">
+                            <img data-src="https://bi.im-g.pl/im/8a/7b/18/z25672074II.jpg" src="https://bi.im-g.pl/im/8a/7b/18/z25672074II.jpg" alt="Zdjęcie cyklu: Moto 2030">
+                        </div>
+                        <div class="navigation__cyclesDetails">
+                            <div class="navigation__cyclesName">Moto 2030</div>
+                            <div class="navigation__cyclesDate"></div>
+                        </div>
+                    </a>
+                </div>
+        <div class="navigation__cyclesList">
+                <!-- GRUPA LINKÓW NEWS I SPORT -->
+                <div class="navigation__cyclesTitle">LUDZIE</div>
+
+                <a href="https://oskarzam.gazeta.pl/oskarzam/0,0.html#s=NavLinksCykl" id="LinkArea:NavLinksCykl" class="navigation__cyclesElement" title="Oskarżam">
+                        <div class="navigation__cyclesPhoto">
+                            <img data-src="https://bi.im-g.pl/im/88/69/1c/z29791880II.jpg" src="https://bi.im-g.pl/im/88/69/1c/z29791880II.jpg" alt="Zdjęcie cyklu: Oskarżam">
+                        </div>
+                        <div class="navigation__cyclesDetails">
+                            <div class="navigation__cyclesName">Oskarżam</div>
+                            <div class="navigation__cyclesDate">pierwszy wtorek miesiąca, 19</div>
+                        </div>
+                    </a>
+                <a href="https://open.spotify.com/show/1Qs2O5DD9x6Hzy9hNIEYt5#s=NavLinksCykl" id="LinkArea:NavLinksCykl" class="navigation__cyclesElement" title="Mamy czas">
+                        <div class="navigation__cyclesPhoto">
+                            <img data-src="https://bi.im-g.pl/im/b6/88/1b/z28872630II.jpg" src="https://bi.im-g.pl/im/b6/88/1b/z28872630II.jpg" alt="Zdjęcie cyklu: Mamy czas">
+                        </div>
+                        <div class="navigation__cyclesDetails">
+                            <div class="navigation__cyclesName">Mamy czas</div>
+                            <div class="navigation__cyclesDate">niedziela, 10</div>
+                        </div>
+                    </a>
+                <a href="https://weekend.gazeta.pl/weekend/7,184550,28629767,zetka-z-zetka-o-feminizmie-polityce-i-wolnej-szkole-podcast.html#s=NavLinksCykl" id="LinkArea:NavLinksCykl" class="navigation__cyclesElement" title="Zetka z zetką">
+                        <div class="navigation__cyclesPhoto">
+                            <img data-src="https://bi.im-g.pl/im/cf/8b/1b/z28882127II.jpg" src="https://bi.im-g.pl/im/cf/8b/1b/z28882127II.jpg" alt="Zdjęcie cyklu: Zetka z zetką">
+                        </div>
+                        <div class="navigation__cyclesDetails">
+                            <div class="navigation__cyclesName">Zetka z zetką</div>
+                            <div class="navigation__cyclesDate">podcast</div>
+                        </div>
+                    </a>
+                <a href="https://www.edziecko.pl/matka-polka-za-granica#s=NavLinksCykl" id="LinkArea:NavLinksCykl" class="navigation__cyclesElement" title="Matka Polka za granicą">
+                        <div class="navigation__cyclesPhoto">
+                            <img data-src="https://bi.im-g.pl/im/9f/46/1a/z27551903II.jpg" src="https://bi.im-g.pl/im/9f/46/1a/z27551903II.jpg" alt="Zdjęcie cyklu: Matka Polka za granicą">
+                        </div>
+                        <div class="navigation__cyclesDetails">
+                            <div class="navigation__cyclesName">Matka Polka za granicą</div>
+                            <div class="navigation__cyclesDate"></div>
+                        </div>
+                    </a>
+                <a href="https://kobieta.gazeta.pl/rozmowy-bez-granic#s=NavLinksCykl" id="LinkArea:NavLinksCykl" class="navigation__cyclesElement" title="Rozmowy bez granic">
+                        <div class="navigation__cyclesPhoto">
+                            <img data-src="https://bi.im-g.pl/im/a3/60/1a/z27658915II.jpg" src="https://bi.im-g.pl/im/a3/60/1a/z27658915II.jpg" alt="Zdjęcie cyklu: Rozmowy bez granic">
+                        </div>
+                        <div class="navigation__cyclesDetails">
+                            <div class="navigation__cyclesName">Rozmowy bez granic</div>
+                            <div class="navigation__cyclesDate"></div>
+                        </div>
+                    </a>
+                </div>
+        <div class="navigation__cyclesList">
+                <!-- GRUPA LINKÓW NEWS I SPORT -->
+                <div class="navigation__cyclesTitle">KULTURA I TECHNOLOGIA</div>
+
+                <a href="https://www.plotek.pl/gwiazdy-lat-90#s=NavLinksCykl" id="LinkArea:NavLinksCykl" class="navigation__cyclesElement" title="Gwiazdy lat 90.">
+                        <div class="navigation__cyclesPhoto">
+                            <img data-src="https://bi.im-g.pl/im/b7/88/1b/z28872631II.jpg" src="https://bi.im-g.pl/im/b7/88/1b/z28872631II.jpg" alt="Zdjęcie cyklu: Gwiazdy lat 90.">
+                        </div>
+                        <div class="navigation__cyclesDetails">
+                            <div class="navigation__cyclesName">Gwiazdy lat 90.</div>
+                            <div class="navigation__cyclesDate">poniedziałek</div>
+                        </div>
+                    </a>
+                <a href="https://kultura.gazeta.pl/popkultura#s=NavLinksCykl" id="LinkArea:NavLinksCykl" class="navigation__cyclesElement" title="POPkultura">
+                        <div class="navigation__cyclesPhoto">
+                            <img data-src="https://bi.im-g.pl/im/2e/01/18/z25173294II.jpg" src="https://bi.im-g.pl/im/2e/01/18/z25173294II.jpg" alt="Zdjęcie cyklu: POPkultura">
+                        </div>
+                        <div class="navigation__cyclesDetails">
+                            <div class="navigation__cyclesName">POPkultura</div>
+                            <div class="navigation__cyclesDate">czwartek, 19</div>
+                        </div>
+                    </a>
+                <a href="https://next.gazeta.pl/toptech#s=NavLinksCykl" id="LinkArea:NavLinksCykl" class="navigation__cyclesElement" title="TOPtech">
+                        <div class="navigation__cyclesPhoto">
+                            <img data-src="https://bi.im-g.pl/im/fc/97/18/z25786364II.jpg" src="https://bi.im-g.pl/im/fc/97/18/z25786364II.jpg" alt="Zdjęcie cyklu: TOPtech">
+                        </div>
+                        <div class="navigation__cyclesDetails">
+                            <div class="navigation__cyclesName">TOPtech</div>
+                            <div class="navigation__cyclesDate">sobota, 10</div>
+                        </div>
+                    </a>
+                <a href="https://next.gazeta.pl/technoterapia#s=NavLinksCykl" id="LinkArea:NavLinksCykl" class="navigation__cyclesElement" title="TechnoTerapia">
+                        <div class="navigation__cyclesPhoto">
+                            <img data-src="https://bi.im-g.pl/im/cd/44/1a/z27543757II.jpg" src="https://bi.im-g.pl/im/cd/44/1a/z27543757II.jpg" alt="Zdjęcie cyklu: TechnoTerapia">
+                        </div>
+                        <div class="navigation__cyclesDetails">
+                            <div class="navigation__cyclesName">TechnoTerapia</div>
+                            <div class="navigation__cyclesDate"></div>
+                        </div>
+                    </a>
+                <a href="https://www.plotek.pl/kryminalne-zagadki-plotka#s=NavLinksCykl" id="LinkArea:NavLinksCykl" class="navigation__cyclesElement" title="Kryminalne zagadki Plotka">
+                        <div class="navigation__cyclesPhoto">
+                            <img data-src="https://bi.im-g.pl/im/a6/46/1a/z27551910II.jpg" src="https://bi.im-g.pl/im/a6/46/1a/z27551910II.jpg" alt="Zdjęcie cyklu: Kryminalne zagadki Plotka">
+                        </div>
+                        <div class="navigation__cyclesDetails">
+                            <div class="navigation__cyclesName">Kryminalne zagadki Plotka</div>
+                            <div class="navigation__cyclesDate"></div>
+                        </div>
+                    </a>
+                <a href="https://special.gazeta.pl/special/0,0.html#s=NavLinksCykl" id="LinkArea:NavLinksCykl" class="navigation__cyclesElement" title="Gazeta.pl Special">
+                        <div class="navigation__cyclesPhoto">
+                            <img data-src="https://bi.im-g.pl/im/d6/4d/19/z26533078II.jpg" src="https://bi.im-g.pl/im/d6/4d/19/z26533078II.jpg" alt="Zdjęcie cyklu: Gazeta.pl Special">
+                        </div>
+                        <div class="navigation__cyclesDetails">
+                            <div class="navigation__cyclesName">Gazeta.pl Special</div>
+                            <div class="navigation__cyclesDate"></div>
+                        </div>
+                    </a>
+                </div>
+        </div>
+</div>
+</div>
+{{/with}}
